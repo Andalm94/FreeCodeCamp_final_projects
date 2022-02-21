@@ -5,7 +5,11 @@ function convertToRoman(num) {
 
   let translatedNumber = "";
 
-  /*Explanation: We will check if the number passed as parameter is less than position i of the "decimals" array. If it is true, the Roman equivalent is added to the "translatedNumber" array and its decimal equivalent is subtracted from the number passed in the parameter until it reaches 0.*/
+  /*
+  Explanation: We will check if the number passed as parameter is less than position i of the "decimals" array.
+  If it is true, the Roman equivalent is added to the "translatedNumber" array and its decimal equivalent is subtracted
+  from the number passed in the parameter until it reaches 0.
+  */
 
   for (let i = 0; i < decimals.length; i++) {
     while (decimals[i] <= num) {

@@ -3,7 +3,10 @@ function rot13(str) {
 
   let message = [];
 
-//We create an empty array and check if the elements of the string passed by parameter match any element of the alphabet.If it doesn't, the element is passed unchanged.
+  /*
+  We create an empty array and check if the elements of the string passed by parameter match any element of the alphabet.
+  If it doesn't, the element is passed unchanged.
+  */
 
   for (let i = str.length; i >= 0; i-- ){
     for(let j = alphabet.length-1; j >= 0; j--){

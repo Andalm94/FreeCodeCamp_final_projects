@@ -22,7 +22,11 @@ function checkCashRegister(price, cash, cid) {
   let filteredCid = cid.filter(elem => elem[1] != 0).reverse();
 
   
-  //We go through each element of the filtered cid array and we add to the "amount" variable the amount that we must load in the "outputChange" array.
+  /*
+  We go through each element of the filtered cid array and we add to the "amount" variable
+  the amount that we must load in the "outputChange" array.
+  */
+
   filteredCid.forEach(elem => {
     let currency = elem[0];
     let currencySum = elem[1]*100;
@@ -39,7 +43,12 @@ function checkCashRegister(price, cash, cid) {
   });
 
 
-// We check if the "change" variable is greater than, equal to or less than 0. Depending on that condition, the function will return "insufficient funds", "closed" or "open". In the last 2 cases, it will also return the change.
+  /*
+  We check if the "change" variable is greater than, equal to or less than 0.
+  Depending on that condition, the function will return "insufficient funds", "closed" or "open".
+  In the last 2 cases, it will also return the change.
+  */
+
   if (change > 0){
     outputStatus = "INSUFFICIENT_FUNDS";
     outputChange = [];
