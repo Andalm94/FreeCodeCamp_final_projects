@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Survey-Form-styles.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <header>
+        <h1 id="title">Gaming-Services Survey Form</h1>
+        <p id="description">Your survey will help us to offer you a better and more personalized experience.</p>
+    </header>
+
+    <main>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Name</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required/>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input type="number" name="age" id="number" class="form-control" min="10" max="99" placeholder="Age"/>
+            </div>
+            <div class="form-group">
+                <p>What do you expect from a video game?</p>
+                <select id="dropdown" name="hours" class="form-control" required>
+                    <option disabled selected value>Select</option>
+                    <option value="Just a chill moment">Just a chill moment</option>
+                    <option value="Compete against other players">Compete against other players</option>
+                    <option value="Overcome skill challenges">Overcome skill challenges</option>
+                    <option value="Command troops and armies">Command troops and armies</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Would you recommend our services to other gamers?</p>
+                <label><input name="user-recommend" value="Yes! Sure" type="radio" class="input-radio" checked/>Yes! Sure</label>
+                <label><input name="user-recommend" value="Yes, maybe" type="radio" class="input-radio"/>Yes, maybe</label>
+                <label><input name="user-recommend" value="Maybe not" type="radio" class="input-radio"/>Maybe not</label>
+                <label><input name="user-recommend" value="Of course not!" type="radio" class="input-radio"/>Of course not!</label>
+            </div>
+            <div class="form-group">
+                <p>What is your favorite video game genre?</p>
+                    <label><input name="most-like" value="First Person Shooter" type="checkbox" class="input-checkbox"/>First Person Shooter</label>
+                    <label><input name="most-like" value="Real Time Strategy" type="checkbox" class="input-checkbox"/>Real Time Strategy</label>
+                    <label><input name="most-like" value="Survival Horror" type="checkbox" class="input-checkbox"/>Survival Horror</label>
+                    <label><input name="most-like" value="Action RPG" type="checkbox" class="input-checkbox"/>Action RPG</label>
+                    <label><input name="most-like" value="Sandbox/Open World" type="checkbox" class="input-checkbox"/>Sandbox/Open World</label>
+                    <label><input name="most-like" value="MMORPG" type="checkbox" class="input-checkbox"/>MMORPG</label>
+                    <label><input name="most-like" value="MOBA" type="checkbox" class="input-checkbox"/>MOBA</label>
+                    <label><input name="most-like" value="Rougelike" type="checkbox" class="input-checkbox"/>Rougelike</label>
+                    <label><input name="most-like" value="Sports" type="checkbox" class="input-checkbox"/>Sports</label>
+            </div>
+            <div class="form-group">
+                <p>Comments? Suggestions? Send your message here:</p>
+                <textarea id="comments" class="input-textarea" name="comments" placeholder="Enter your comments here."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p class="footer-text">This is a page made by Andres Almeida for FreeCodeCamp responsive web design projects</p>
+    </footer>
+    
+</body>
+</html>
+
