@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Product-Landing-Page.css">
+    <title>Document</title>
+</head>
+
+<div class="container"></div>
+
+<body>
+    <header id="header">
+        <div class="logo"><img id="header-img" src="imgs\Project3-logo.png" alt="original PC-MasterRace Logo"/></div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#how-it-works">Introduction</a></li>
+                <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h2>Computers made by gamers, for gamers.</h2>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <input name="email" id="email" type="email" placeholder="Enter your email adress" required>
+                <input id="submit" type="submit" value="Get Started"  class="btn" style="color: black;"/>
+            </form>
+        </section>
+
+        <div class="container">
+            
+            <section id="features">
+                <div class="grid">
+                    <div class="icon"><img class="feature-icon" src="imgs/Project3-icon1.png"/></div>
+                    <div class="desc">
+                        <h2>Best components</h2>
+                        <p>We make sure that your computer is made with the latest generation components on the market.</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon"><img class="feature-icon" src="imgs/Project3-icon2.png"/></div>
+                    <div class="desc">
+                        <h2>Fast shipping</h2>
+                        <p>You will have your computer in less than a week.</p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="icon"><img class="feature-icon" src="imgs/Project3-icon3.png"/></div>
+                    <div class="desc">
+                        <h2>Purchase guarantee</h2>
+                        <p>We take responsibility if there are faults in the product.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="how-it-works">
+                <iframe id="video" height="315" src="https://www.youtube.com/embed/pNSnSkNGI3g" frameborder allowfullscreen></iframe>
+            </section>
+
+            <section id="pricing">
+                <div class="product" id="cheapy">
+                    <div class="level">Cheapy</div>
+                    <h2>$700</h2>
+                    <ol>
+                        <li>INTEL MICRO CORE I3 10100 4.3GHZ</li>
+                        <li>GIGABYTE MOTHER H410M S2H V3 S1200</li>
+                        <li>PALIT NVIDIA GEFORCE GT 730</li>
+                        <li>WESTERN DIGITAL DISCO HDD 500GB</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="Medium">
+                    <div class="level">Medium</div>
+                    <h2>$1200</h2>
+                    <ol>
+                        <li>INTEL MICRO CORE I5 10400F</li>
+                        <li>GIGABYTE MOTHER Z590 UD s1200</li>
+                        <li>PALIT NVIDIA GTX 1660 DUAL 6GB</li>
+                        <li>WESTERN DIGITAL DISCO HDD 1TB</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="Master-Race">
+                    <div class="level">Master-Race</div>
+                    <h2>$2000</h2>
+                    <ol>
+                        <li>INTEL MICRO CORE I7 12700K</li>
+                        <li>GIGABYTE MOTHER Z590 AORUS XTREME s1200</li>
+                        <li>PALIT NVIDIA RTX 3090 GAMEROCK ARGB 24GB</li>
+                        <li>HP DISCO SSD 960GB S650 2.5 " SATA III</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#"></a>Privacy</li>
+            <li><a href="#"></a>Terms</li>
+            <li><a href="#"></a>Contact</li>
+        </ul>
+        <span>This is a page made by Andres Almeida for FreeCodeCamp responsive web design projects</span>
+    </footer>
+    
+</body>
+</html>
